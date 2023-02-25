@@ -1,0 +1,10 @@
+const express = require("express");
+// const express = require('express');
+const router = express.Router();
+const myDataController = require("../controllers/controller");
+router.post("/", myDataController.createItem);
+router.get("/", myDataController.getItem);
+router.get("/:id", myDataController.getItemById);
+router.put("/:id", myDataController.UpdateItem);
+router.delete("/:id", myDataController.deleteItem);
+module.exports = router;
