@@ -8,4 +8,8 @@ PUT http://localhost:1214/:id
 
 DELETE  http://localhost:1214/:id
 
+POST http://localhost:1214/login
+
+POST http://localhost:1214/register
+
 content-type: application/json
